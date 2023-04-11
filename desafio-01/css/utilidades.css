@@ -1,0 +1,27 @@
+/* Cores */
+:root {
+    --cor-primaria: #574ae8;
+    --cor-secundaria: #3ea1db;
+    --cor-branca: #fff;
+    --cor-branca-2: #f3f5f7;
+    --cor-cinza: #717171;
+    --cor-cinza-escuro: #1a202c;
+}
+
+/* Fontes */
+:root {
+    --fonte-destaque: 'Lexend Deca', sans-serif;
+    --fonte-conteudo: 'Inter', sans-serif;
+}
+
+/* Classes utilitarias */
+.max-width {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Gradiente */
+.gradiente {
+    background-image: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
+}
