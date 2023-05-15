@@ -6,9 +6,7 @@ $preto-claro: #181818;
 
 // Fonte
 $fonte: 'Montserrat', sans-serif;
-body {
-    font-family: $fonte;
-}
+
 
 // Reset 
 * {
@@ -17,4 +15,9 @@ body {
     box-sizing: border-box;
 }
 
-// Classes
+// Geral
+body {
+    font-family: $fonte;
+    background-color: $branco;
+}
+
