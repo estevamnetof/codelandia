@@ -56,6 +56,13 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 800px) {
+  .intro-principal {
+    margin: 0;
+    padding: 20px;
+  }
+}
+
 .conteudo {
   display: flex;
   flex-direction: column;
@@ -72,8 +79,17 @@ body {
 .conteudo p {
   font-size: 1.25rem;
   color: #474747;
-  margin-top: 20px;
-  margin-bottom: 65px;
+  margin: 20px auto 65px auto;
+}
+
+@media (max-width: 800px) {
+  .conteudo h1 {
+    margin-top: 50px;
+  }
+  .conteudo p {
+    max-width: 25ch;
+    margin-bottom: 60px;
+  }
 }
 
 .conteudo-produto {
@@ -99,10 +115,21 @@ body {
   height: 150px;
 }
 
+.conteudo-produto-item img:hover {
+  transform: scale(1.3);
+  transition: 1s all ease;
+}
+
 .footer {
   background: #181818;
   color: #f9f9f9;
   padding: 20px 0;
   text-align: center;
   margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    margin-top: 50px;
+  }
 }
