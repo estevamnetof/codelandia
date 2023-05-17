@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+// Intro
+.intro-bg {
+    background: $purple-light;
+}
+
+.intro {
+    display: flex;
+    height: 560px;
+    justify-content: space-between;
+    .intro-descricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 400;
+        max-width: 50ch;
+        h1 {
+            font-family: $fonte-M;
+            font-size: 2.25rem;
+            color: #2B2B2B;
+            margin-bottom: 17px;
+        }
+        p, button {
+            font-family: $fonte-L;
+            font-size: 1.25rem;
+        }
+        p {
+            color: $gray;
+            margin-bottom: 59px;
+        }
+        button {
+            width: 155px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            background: $purple;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+     
+     
+}

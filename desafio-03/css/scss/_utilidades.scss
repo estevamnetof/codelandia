@@ -1,0 +1,19 @@
+// Cores
+$purple: #6C63FF;
+$purple-light: #D7D4FF;
+$white: #FFF;
+$white-200: #F9F9F9;
+$gray: #555555;
+$gray-dark: #2A2A2A;
+
+// Fontes
+$fonte-M: 'Merriweather', sans-serif;
+$fonte-L: 'Lato', sans-serif;
+
+// Classes utilitárias
+.max-width {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 64px;
+    gap: 64px;
+}
