@@ -68,16 +68,10 @@ img {
 }
 
 @media (max-width: 1000px) {
-  .intro .intro-descricao img {
-    width: 30%;
-  }
-}
-
-@media (max-width: 1000px) {
   .intro {
     flex-direction: column;
     gap: 0;
-    height: 800px;
+    height: 700px;
     justify-content: center;
     margin-bottom: 75px;
   }
@@ -126,7 +120,6 @@ img {
 }
 
 .card .card-color {
-  background: #FF6363;
   height: 222px;
 }
 
@@ -137,9 +130,6 @@ img {
 
 @media (max-width: 1000px) {
   .card {
-    margin: 0 auto;
-  }
-  .card .card + .card {
-    margin-top: 30px;
+    margin: 30px auto;
   }
 }

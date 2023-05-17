@@ -50,16 +50,11 @@ img {
             color: $white;
             cursor: pointer;
         }
-        @media (max-width: 1000px) {
-            img {
-                width: 30%;
-            }
-        }
     }
     @media (max-width: 1000px) {
         flex-direction: column;
         gap: 0;
-        height: 800px;
+        height: 700px;
         justify-content: center;
         margin-bottom: 75px;
     }
@@ -73,7 +68,6 @@ img {
     gap: 0;
     @media (max-width: 1115px) {
         grid-template-columns: 1fr 1fr;
-        // gap: 0;
     }
     @media (max-width: 1000px) {
         grid-template-columns: 1fr;
@@ -100,7 +94,6 @@ img {
         margin-top: 26px;
     }
     .card-color {
-        background: #FF6363;
         height: 222px;
     }
     .card-info {
@@ -108,9 +101,6 @@ img {
         max-width: 30ch;
     }
     @media (max-width: 1000px) {
-        margin: 0 auto;
-        .card + .card {
-            margin-top: 30px;
-        }
+        margin: 30px auto;
     }
 }
