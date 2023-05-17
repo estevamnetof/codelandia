@@ -37,6 +37,9 @@ img {
         p {
             color: $gray;
             margin-bottom: 59px;
+            @media (max-width: 1000px) {
+                margin-bottom: 46px;
+            }
         }
         button {
             width: 155px;
@@ -47,7 +50,67 @@ img {
             color: $white;
             cursor: pointer;
         }
+        @media (max-width: 1000px) {
+            img {
+                width: 30%;
+            }
+        }
     }
-     
-     
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 0;
+        height: 800px;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+}
+
+// Card Section
+.section-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 0;
+    @media (max-width: 1115px) {
+        grid-template-columns: 1fr 1fr;
+        // gap: 0;
+    }
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    width: 340px;
+    height: 423px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+    h2 {
+        font-family: $fonte-M;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: $gray-dark;
+        margin-top: 24px;
+    }
+    p {
+        font-family: $fonte-L;
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: $gray;
+        margin-top: 26px;
+    }
+    .card-color {
+        background: #FF6363;
+        height: 222px;
+    }
+    .card-info {
+        margin-left: 30px;
+        max-width: 30ch;
+    }
+    @media (max-width: 1000px) {
+        margin: 0 auto;
+        .card + .card {
+            margin-top: 30px;
+        }
+    }
 }
