@@ -1,0 +1,27 @@
+// Cores
+$green-light: #04C35C;
+$purple-light: #2B6CB0; 
+$white: #fff;
+$white-200: #F7FAFC;
+$gray: #1A202C;
+
+// Fontes
+$fonte-M: 'Merriweather', sans-serif;
+$fonte-L: 'Lato', sans-serif;
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .ilustracao {
+        align-items: center;
+    }
+}
