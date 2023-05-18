@@ -146,6 +146,9 @@ img {
     textarea::placeholder {
         opacity: 74%;
     }
+    textarea {
+        font-family: $fonte-L;
+    }
     button {
         font-size: 1.25rem;
         color: $white;
