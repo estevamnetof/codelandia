@@ -134,3 +134,65 @@ img {
     margin: 30px auto;
   }
 }
+
+.form-bg {
+  background: #D7D4FF;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.form h1 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #2A2A2A;
+  margin: 86px auto 60px auto;
+}
+
+.form-campos {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.form-campos input, .form-campos textarea {
+  width: 470px;
+  font-size: 1.125rem;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-campos input {
+  height: 65px;
+}
+
+.form-campos input::placeholder,
+.form-campos textarea::placeholder {
+  opacity: 74%;
+}
+
+.form-campos button {
+  font-size: 1.25rem;
+  color: #FFF;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  background: #6C63FF;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  transition: .3s all;
+}
+
+.form-campos button:hover {
+  background: #514ad6;
+}
