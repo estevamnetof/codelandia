@@ -18,10 +18,23 @@ $fonte-L: 'Lato', sans-serif;
 
 .container {
     max-width: 1400px;
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     .ilustracao {
+        display: flex;
         align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50%;
+        background: #f7fafc;
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 50%;
     }
 }
