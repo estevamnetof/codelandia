@@ -1,0 +1,27 @@
+// Fontes
+$fonte: 'Poppins', sans-serif;
+
+// Cores
+$black: #181818;
+$white: #F9F9F9;
+$green-light: #628E75;
+$green-dark: #1A4855;
+
+// Classes utilitárias
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+// Reset e Geral
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fonte;
+    background: linear-gradient(270deg, #1A4855 0%, #628E76 100%);
+} 
