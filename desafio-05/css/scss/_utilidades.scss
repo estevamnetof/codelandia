@@ -24,4 +24,7 @@ $green-dark: #1A4855;
 body {
     font-family: $fonte;
     background: linear-gradient(270deg, #1A4855 0%, #628E76 100%);
+    @media (max-width: 1100px) {
+        background: linear-gradient(0deg, #1A4855 0%, #628E76 100%);
+    }
 } 
