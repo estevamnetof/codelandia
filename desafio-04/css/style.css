@@ -9,22 +9,131 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
-.container .ilustracao {
+.ilustracao {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 50%;
-  background: #f7fafc;
+  background: #F7FAFC;
 }
 
-.container .login {
+@media (max-width: 900px) {
+  .ilustracao {
+    display: none;
+  }
+}
+
+.login {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 50%;
+  text-align: left;
+  margin: 0 100px;
+  justify-content: center;
+  color: #1A202C;
+}
+
+@media (max-width: 900px) {
+  .login {
+    margin: 0 auto;
+  }
+}
+
+.login span, .login h1 {
+  font-family: "Merriweather", sans-serif;
+}
+
+.login span {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 7px;
+}
+
+.login h1 {
+  font-weight: 700;
+  font-size: 1.625rem;
+  margin-bottom: 25px;
+}
+
+.login label, .login input::placeholder, .login a, .login button {
+  font-family: "Lato", sans-serif;
+}
+
+.login label {
+  font-size: 1rem;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #E8E8E8;
+}
+
+.login input[type="email"] {
+  margin-bottom: 10px;
+}
+
+.login input[type="password"] {
+  margin-bottom: 28px;
+}
+
+.login .form-detalhes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.login .form-detalhes .form-radio {
+  display: flex;
+  justify-content: center;
+  gap: 0 10px;
+}
+
+.login .form-detalhes a {
+  text-decoration: none;
+  color: #2B6CB0;
+  font-size: 0.875rem;
+}
+
+.login button {
+  display: flex;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.login button + button {
+  margin-top: 15px;
+}
+
+.login footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #1A202C;
+  gap: 5px;
+}
+
+.login footer a {
+  color: #2B6CB0;
+  text-decoration: none;
 }
