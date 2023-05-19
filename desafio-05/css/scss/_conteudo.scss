@@ -6,7 +6,6 @@
     padding: 0 130px;
     .conteudo-texto {
         color: $white;
-        margin: 0 auto;
         > span {
             font: 700 1.25rem/1.5 $fonte;
             margin-bottom: 14px;
@@ -23,6 +22,9 @@
             font: 400 1rem/1.75 $fonte;
             margin-bottom: 46px;
             max-width: 43ch;
+        }
+        @media (max-width:1100px) {
+            margin: 0 auto;
         }
         @media (max-width: 450px) {
             padding: 0 20px;
