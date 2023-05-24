@@ -1,6 +1,7 @@
-import '../src/styles/style.css'
 import Header from './components/Header'
 import Main from './components/Main'
+
+import '../src/styles/main.sass'
 
 function App() {
 

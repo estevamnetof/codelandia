@@ -1,0 +1,106 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@700&display=swap')
+
+/* Reset */
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+// Cores
+$cor-primaria:#FFA800
+$cor-secundaria:#0072D2
+$cor-conteudo:#FFFFFF
+$cor-conteudo-destaque:#131318
+
+$fonte-conteudo: 'B612', sans-serif
+
+body 
+    background-image: url(../images/fundo.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    min-height: 100vh
+    font-family: $fonte-conteudo
+    color: $cor-conteudo  
+
+/* Header */
+.header 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    padding-top: 45px
+    
+    span, h1
+        font-weight: 700
+        text-transform: uppercase
+
+    span
+        font-size: 1.25rem
+
+    h1
+        font-size: 6rem
+        margin-top: 35px
+
+
+.main 
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    width: 100%
+    gap: 50px
+
+    .main-img
+        background-image: url(../images/cover.png)
+        background-size: cover
+        background-position: center
+        height: 257px
+        width: 184px
+    
+    .main-conteudo
+        max-width: 57ch
+    
+    .main-descricao 
+        display: flex
+        margin-top: 40px
+        align-items: center
+        font-size: 1.5rem
+        justify-content: space-between
+
+        p
+            display: flex
+            gap: 20px
+            text-align: center
+    
+    button
+        font-size: 1rem
+        text-transform: uppercase
+        border-radius: 3px
+        font-family: 'Open Sans', sans-serif
+        gap: 20px
+        color: $cor-conteudo
+        margin-top: 40px
+        cursor: pointer
+        transition: .3s all
+
+    .btn1
+        padding: 15px 27px
+        border: none
+        background: $cor-secundaria
+        margin-right: 20px
+
+    .btn1:hover
+        background: #0060af
+
+    .btn2 
+        padding: 15px 25px
+        border: 1px solid $cor-conteudo
+        background: #131318
+
+    .btn2:hover 
+        background: #1b1b24
+
+
