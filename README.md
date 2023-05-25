@@ -10,4 +10,4 @@ desafio 04: https://estevamnetof.github.io/codelandia/desafio-04/
 
 desafio 05: https://estevamnetof.github.io/codelandia/desafio-05/
 
-desafio 06: https://codelandia-desafio06.vercel.app/
+desafio 06: https://codelandia-desafio06.vercel.app/  /* ainda sem responsividade */
