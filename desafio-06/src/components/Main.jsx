@@ -9,7 +9,7 @@ const Main = () => {
       <div className="main-conteudo">
         <p>Em “Loki” da Marvel Studios, o vilão mercurial Loki (Tom Hiddleston) retoma seu papel como o Deus do Mal em uma nova série que ocorre após os eventos de “Vingadores: Endgame”.</p>
         <div className="main-descricao">
-            <p><img src={clock} alt="Relógio" /> 51min</p>
+            <p><img src={clock} alt="Relógio" />51min</p>
             <div className="main-star">
                 <img src={star}/>
                 <img src={star}/>
