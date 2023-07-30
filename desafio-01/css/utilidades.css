@@ -25,3 +25,11 @@
 .gradiente {
     background-image: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
 }
+
+.hide {
+    display: none;
+}
+
+.green {
+    background-color: green !important;
+}
