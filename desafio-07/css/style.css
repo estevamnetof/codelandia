@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color: #FF4656;
+    --black-color: #1F2326;
+    --white-color: #FFFFFF;
+
+    --blue-message: #2962FF;
+    --green-sucess: #FFCE52;
+    --red-error: #F03D3D;
+    --gray-information: #E0E0E0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white-color);
+
+    min-height: 100vh;
+    background-image: url(../image/background.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+@media (max-width: 650px) {
+    .header {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .share {
+        display: none;
+    }
+}
+
+.main {
+    padding-top: 70px;
+}
+
+.title {
+    padding-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.characters p {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.character img {
+    position: relative;
+    clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 15%);
+    background: var(--brand-color);
+    border: 1.5px solid #fff;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.character img:hover {
+    transform: scale(1) translate(-10px, -30px);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+}
+
+.characters {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    .characters {
+        justify-content: center;
+    }
+}
+
+.image-border {
+    position: absolute;
+    background: #fff;
+    width: 170px;
+    height: 170px;
+    /* left: -15px;
+    top: -15px; */
+    clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+}
+
+.image-border::after {
+    content: "";
+    position: absolute;
+    background: #1f2326;
+    width: 100%;
+    height: 100%;
+    left: 1px;
+    top: 1px;
+    clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+}
