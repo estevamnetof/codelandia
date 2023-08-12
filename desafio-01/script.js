@@ -11,36 +11,32 @@ icon.forEach(item => {
 
 // Pesquisa
 const busca = document.querySelector('.header-busca input');
-const conteudo = document.querySelectorAll('.conteudo');
 const conteudoH2 = document.querySelectorAll('.conteudo h2');
 
 const conteudoArray = [];
 
 conteudoH2.forEach((elemento) => {
     const objetoH2 = {
+        element: elemento.parentElement,
         text: elemento.textContent
     };
 
     conteudoArray.push(objetoH2);
 });
 
-busca.addEventListener('keydown', handleSearch);
+busca.addEventListener('keyup', handleSearch);
 
 function handleSearch() {
-    const pesquisa = busca.value;
+    const pesquisa = busca.value.toLocaleLowerCase();
 
-    const resultado = conteudoArray.filter(item => {
-        return item.text.toLocaleLowerCase().includes(pesquisa.toLocaleLowerCase());
-    });
+    conteudoArray.forEach(item => {
+        const itemBusca = item.text.toLocaleLowerCase();
+        const elementoConteudo = item.element;
 
-    if (pesquisa === '') return;
-
-    resultado.forEach(item => {
-        const elementoEncontrado = conteudo.find(elemento => elemento.textContent.toLocaleLowerCase() === item.text.toLocaleLowerCase());
-        if (elementoEncontrado) {
-            elementoEncontrado.classList.add('green');
+        if (itemBusca.includes(pesquisa)) {
+            elementoConteudo.style.display = 'block';
+        } else {
+            elementoConteudo.style.display = 'none';
         }
     });
-
-    console.log(resultado);
 }
