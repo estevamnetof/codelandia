@@ -1,0 +1,128 @@
+main {
+    height: 100%;
+    padding-top: rem(100);
+    
+    .main-top {
+        @include flexboxSpaceAroundStart();
+
+        img {
+
+            &:nth-child(1) {
+                margin-top: -33px;
+            }
+
+            @media (max-width: 830px) {
+                display: none;
+            }
+        }
+
+        .main-title {
+            max-width: 800px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    }
+
+    .main-bottom {
+        @include flexboxSpaceAroundStart();
+        margin-top: rem(80);
+
+        img {
+            @media (max-width: 830px) {
+                display: none;
+            }
+        }
+
+        .main-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .buttons-group {
+                @include flexboxCenterCenter;
+                gap: rem(50);
+                margin-bottom: rem(60);
+
+                @media (max-width: 600px) {
+                    gap: 14px;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }   
+            }
+
+            button {
+                padding: 15px 40px;
+                border-radius: 6px;
+                text-transform: uppercase;
+                font-style: normal;
+                transition: all .5s ease;
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                }
+            }
+
+            .btn-emoji {
+                background-color: $brand-color;
+                border: none;
+                color: $white;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .btn-lib {
+                background-color: transparent;
+                border: 2px solid $white-20;
+                color: $gray;
+
+                &:hover {
+                    border: 2px solid $brand-color;
+                    color: $brand-color;
+                }
+            }
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    section {
+        @include flexboxSpaceAroundCenter;
+        background-color: #F2F2F2;
+        margin-top: 100px;
+        padding-bottom: 80px;
+
+        @media (max-width: 830px) {
+            flex-direction: column;
+            gap: rem(25);
+        }
+
+        .depositions {
+            max-width: 400px;
+
+            @media (max-width: 600px) {
+                margin: 0 25px;
+            }
+
+            h2 {
+                @include flexboxStartCenter;
+                margin-bottom: 25px;
+                padding-top: 62px;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    height: 30px;
+                    width: 3px;
+                    margin-right: 12px;
+                    background-color: $brand-color;
+                }
+            }
+        }
+    }
+}

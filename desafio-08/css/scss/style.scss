@@ -19,6 +19,23 @@ body {
     max-width: rem(1440);
     margin: 0 auto;
     padding: 0 rem(45);
+
+    @media (max-width: 600px) {
+        padding: 0 rem(26);
+    }
+}
+
+button {
+    font-family: $fonte-principal;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: rem(24);
+    cursor: pointer;
+
+    @media (max-width: 600px) {
+        font-size: rem(12);
+    }
 }
 
 @import 'header';
+@import 'main';
