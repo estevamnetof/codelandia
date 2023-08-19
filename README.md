@@ -13,6 +13,8 @@ São desafios desenvolvido pela comunidade **[Codelândia no Discord](https://di
 | 05 | Studio Ghibli  | [Link](https://estevamnetof.github.io/codelandia/desafio-05/) | [Link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=5854-2&mode=design&t=y8MCYFp0EDOred8A-0) | [Link](https://github.com/RenanS80/a-viagem-de-chihiro) |
 | 06 | Loki           | [Link](https://codelandia-desafio06.vercel.app/) | [Link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=7539-2&mode=design&t=y8MCYFp0EDOred8A-0) | [Link](https://github.com/RenanS80/loki) |
 | 07 | Valorant       | [Link](https://estevamnetof.github.io/codelandia/desafio-07/) | [Link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=10048-2&mode=design&t=y8MCYFp0EDOred8A-0) | [Link](https://github.com/RenanS80/valorant) |
+| 08 | CodeMoji       | [Link](https://estevamnetof.github.io/codelandia/desafio-08/) | [Link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=11471-2&mode=design&t=y8MCYFp0EDOred8A-0) | [Link](https://github.com/RenanS80/codemoji) |
+
 
 ## Habilidades necessárias
 
