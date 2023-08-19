@@ -1,0 +1,58 @@
+header {
+    height: rem(100);
+
+    .container {
+        @include flexboxSpaceBetweenCenter();
+        height: 100%;
+
+        .menu {
+            @include flexboxCenterCenter();
+            gap: rem(45);
+
+            @media (max-width: 600px) {
+                gap: rem(8);
+            }
+
+            .menu-search,
+            .menu-login,
+            .menu-user {
+                background-color: #fff;
+                border: 2px solid $white-20;
+                cursor: pointer;
+                transition: all .4s ease;
+
+                &:hover {
+                    border: 2px solid $brand-color;
+                    color: $brand-color;
+                }
+            }
+            
+            .menu-search,
+            .menu-user {
+                @include flexboxCenterCenter();
+                border-radius: 50%;
+                width: rem(50);
+                height: rem(50);
+            }
+
+            .menu-login {
+                padding: 15px 48px;
+                border-radius: 100px;
+                text-transform: uppercase;
+                color: $gray;
+
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+
+            .menu-user {
+                display: none;
+
+                @media (max-width: 600px) {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

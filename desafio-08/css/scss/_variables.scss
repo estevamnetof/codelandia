@@ -1,0 +1,44 @@
+// Fonte
+$fonte-principal: 'Inter', sans-serif;
+
+// Cores
+$brand-color: #6610F2;
+$white: #F9F9F9;
+$white-20: #EAEAEA;
+$gray: #2F2F2F;
+
+// Tamanho da fonte
+@function rem($pixel, $context: 16) {
+    @return $pixel / $context + rem;
+}
+
+// Flexbox
+@mixin flexboxStartCenter(){              
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flexboxCenterCenter(){            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexboxSpaceBetweenCenter(){         
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexboxSpaceAroundStart(){         
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@mixin flexboxSpaceAroundCenter(){         
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

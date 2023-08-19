@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Sen:wght@400;700&display=swap");
+h1 {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 70px;
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+h3 {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+h4 {
+  font-family: "Sen", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F9F9;
+  color: #2F2F2F;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2.8125rem;
+}
+
+header {
+  height: 6.25rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .container .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8125rem;
+}
+
+@media (max-width: 600px) {
+  header .container .menu {
+    gap: 0.5rem;
+  }
+}
+
+header .container .menu .menu-search,
+header .container .menu .menu-login,
+header .container .menu .menu-user {
+  background-color: #fff;
+  border: 2px solid #EAEAEA;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+header .container .menu .menu-search:hover,
+header .container .menu .menu-login:hover,
+header .container .menu .menu-user:hover {
+  border: 2px solid #6610F2;
+  color: #6610F2;
+}
+
+header .container .menu .menu-search,
+header .container .menu .menu-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+header .container .menu .menu-login {
+  padding: 15px 48px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  color: #2F2F2F;
+}
+
+@media (max-width: 600px) {
+  header .container .menu .menu-login {
+    display: none;
+  }
+}
+
+header .container .menu .menu-user {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header .container .menu .menu-user {
+    display: flex;
+  }
+}
